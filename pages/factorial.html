@@ -12,13 +12,15 @@
   <body class="body">
       <div class="wrapper">
         <header class="header">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./fibonacci.html">Fibonacci</a><li>
-                    <li><a href="./factorial.html">Factorial</a></li>
-                </ul>
-            </nav>
+            <nav class="nav">
+                <div class="navbar-container">
+                  <ul class="nav-links">
+                      <li><a href="../index.html" class="nav-link">Home</a></li>
+                      <li><a href="./fibonacci.html" class="nav-link">Fibonacci</a><li>
+                      <li><a href="./factorial.html" class="nav-link">Factorial</a></li>
+                  </ul>
+                </div>
+              </nav>
         </header>
         <main class="main">
             <h1 class="factorial-title">Factorial numbers.</h1>
@@ -33,7 +35,9 @@
                         <button class="submit-button" id="factorial-button">Submit</button>
                     </div>
                 </form>
-                <p class="factorial-text">The result is: <span id="factorial-result"></span ></p>
+            </div>
+            <div class="result-container">
+              <p class="factorial-text">The result is: <span id="factorial-result"></span ></p>
             </div>
         </main>
         <footer class="footer">Made with &#128150 for Enroute</footer>

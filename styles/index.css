@@ -73,6 +73,37 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  margin-left: 20px;
+  padding: 10px 20px;
+  transition: 0.2s ease-in;
+  border-radius: 5px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0242f0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #fefffe;
+  background-color: #0242f0;
+}
+
 .submit-button {
   background-color: #0242f0;
   border: 2px solid #0242f0;
@@ -90,7 +121,6 @@ h6 {
 }
 
 label {
-  /* color: #a1abb9; */
   font-size: 24px;
 }
 
@@ -102,6 +132,9 @@ input {
   padding: 16px;
   background-color: #fefffe;
   margin: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 li {
@@ -165,4 +198,18 @@ li {
 
 .biography-photo {
   border-radius: 25px;
+}
+
+.biography-resume {
+  margin-top: 16px;
+}
+
+.footer {
+  margin-top: auto;
+  align-self: center;
+}
+
+.result-container {
+  margin: 16px;
+  padding: 16px;
 }

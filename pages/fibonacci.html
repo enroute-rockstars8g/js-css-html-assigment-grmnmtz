@@ -12,12 +12,14 @@
   <body class="body">
     <div class="wrapper">
       <header class="header">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./fibonacci.html">Fibonacci</a><li>
-                <li><a href="./factorial.html">Factorial</a></li>
+        <nav class="nav">
+          <div class="navbar-container">
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="./fibonacci.html" class="nav-link">Fibonacci</a><li>
+                <li><a href="./factorial.html" class="nav-link">Factorial</a></li>
             </ul>
+          </div>
         </nav>
     </header>
     <main class="main">
@@ -29,9 +31,10 @@
             <div>
                 <input type="number" name="fibonacci" id="fibonacci-input">
                 <button class="submit-button" id="fibonacci-button">Submit</button>
-
             </div>
             </form>
+          </div>
+          <div class="result-container">
             <p class="fibonacci-text">The result is: <span id="fibonacci-result"></span></p>
         </div>
     </main>
