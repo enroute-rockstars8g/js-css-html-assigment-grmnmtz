@@ -1,4 +1,4 @@
-const factiorailInput = document.querySelector('#factorial-input')
+const factorialInput = document.querySelector('#factorial-input')
 const factorialButton = document.querySelector('#factorial-button')
 const factorialResult = document.querySelector('#factorial-result')
 factorialButton.addEventListener('click', handleFactorialSubmit)
@@ -30,12 +30,12 @@ function calculateFactorial(number) {
  * Prevents the default submit behaviour,
  * then assigns the result of the calculateFactorial function to a result constant.
  *
- * Finally, it modifies the factorialResult Node by appending the result constant as text content.
+ * Finally, it modifies the factorialResult DOM Node by appending the result constant as text content.
  *
  * @param {*} event
  */
 function handleFactorialSubmit(event) {
   event.preventDefault()
-  const result = calculateFactorial(Number(factiorailInput.value))
+  const result = calculateFactorial(Number(factorialInput.value))
   factorialResult.textContent = result
 }

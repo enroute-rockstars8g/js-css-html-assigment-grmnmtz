@@ -10,7 +10,8 @@
     <title>Fibonacci Exercise</title>
   </head>
   <body class="body">
-    <header class="header">
+    <div class="wrapper">
+      <header class="header">
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -20,16 +21,22 @@
         </nav>
     </header>
     <main class="main">
-        <h1>Given a position (integer), return the number that corresponds to that position in the Fibonacci sequence.</h1>
+        <h1>Fibonacci Sequence</h1>
+        <p>Given a position, return the number of Fibonacci sequence number that corresponds to that position</p>
         <div>
-            <form>
+            <form class="fibonacci-form">
                 <label for="fibonacci">Enter the position</label>
+            <div>
                 <input type="number" name="fibonacci" id="fibonacci-input">
-                <button id="fibonacci-button">Submit</button>
+                <button class="submit-button" id="fibonacci-button">Submit</button>
+
+            </div>
             </form>
-            <p>Result: </p>
+            <p class="fibonacci-text">The result is: <span id="fibonacci-result"></span></p>
         </div>
     </main>
-    <footer class="footer">Made with &#128150 for Enroute </footer>
+    <footer class="footer">Made with &#128150 for Enroute</footer>
+    </div>
+    
   </body>
 </html>
