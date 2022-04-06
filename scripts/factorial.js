@@ -37,5 +37,5 @@ function calculateFactorial(number) {
 function handleFactorialSubmit(event) {
   event.preventDefault()
   const result = calculateFactorial(Number(factiorailInput.value))
-  factorialResult.textContent = `The result is: ${result}`
+  factorialResult.textContent = result
 }
