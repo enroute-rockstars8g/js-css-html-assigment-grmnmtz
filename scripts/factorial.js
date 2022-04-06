@@ -13,6 +13,7 @@ factorialButton.addEventListener('click', handleFactorialSubmit)
  */
 function calculateFactorial(number) {
   if (number < 0) return 'Error'
+  if (number === 0) return 1
 
   let result = 1
 
@@ -36,6 +37,12 @@ function calculateFactorial(number) {
  */
 function handleFactorialSubmit(event) {
   event.preventDefault()
-  const result = calculateFactorial(Number(factorialInput.value))
-  factorialResult.textContent = result
+  if (factorialInput.value) {
+    const result = calculateFactorial(Number(factorialInput.value))
+    factorialResult.textContent = `${result} \u{1F32E} taquitos.`
+    return
+  } else {
+    factorialResult.textContent = 'You need to enter a value! Try again.'
+    return
+  }
 }

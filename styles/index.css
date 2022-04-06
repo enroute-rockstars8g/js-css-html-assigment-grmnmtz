@@ -35,7 +35,8 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background-color: #fefffe;
+  /* background-color: #fefffe; */
+  background-color: #eaebea;
   color: #1e2932;
 }
 
@@ -74,23 +75,94 @@ h6 {
 
 .submit-button {
   background-color: #0242f0;
-  border: none;
+  border: 2px solid #0242f0;
   color: #fefffe;
   padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  font-weight: 600;
+}
+
+.submit-button:hover {
+  background-color: #fefffe;
+  color: #0242f0;
+  border: 2px solid #0242f0;
 }
 
 label {
-  color: #a1abb9;
+  /* color: #a1abb9; */
+  font-size: 24px;
 }
 
 input {
-  padding: 6px;
+  padding: 8px;
 }
 
 .wrapper {
   padding: 16px;
+  background-color: #fefffe;
+  margin: 16px;
 }
 
 li {
   list-style: none;
+}
+
+.factorial-text,
+.factorial-result {
+  font-size: 48px;
+}
+
+.fibonacci-text,
+.fibonacci-result {
+  font-size: 48px;
+}
+
+.fibonacci-title,
+.factorial-title {
+  font-size: 60px;
+}
+
+.factorial-paragraph,
+.fibonacci-paragraph {
+  font-size: 36px;
+}
+
+.biography-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.biography-subtitle {
+  font-size: 36px;
+}
+
+.biography-paragraph {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  align-self: flex-start;
+  margin-left: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.photo-text-container {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 36px;
+}
+
+.biography-photo {
+  border-radius: 25px;
 }

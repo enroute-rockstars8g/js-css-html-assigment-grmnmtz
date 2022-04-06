@@ -39,6 +39,12 @@ function calculateFibonacci(position) {
  */
 function handleFibonacciSubmit(event) {
   event.preventDefault()
-  const result = calculateFibonacci(Number(fibonacciInput.value))
-  fibonacciResult.textContent = result
+  if (fibonacciInput.value) {
+    const result = calculateFibonacci(Number(fibonacciInput.value))
+    fibonacciResult.textContent = `${result} \u{1F680}`
+    return
+  } else {
+    fibonacciResult.textContent = 'You need to put a value. Try again!'
+    return
+  }
 }
